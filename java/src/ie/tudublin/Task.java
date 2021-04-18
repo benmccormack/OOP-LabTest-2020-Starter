@@ -7,14 +7,6 @@ public class Task {
     private int Start;
     private int End;
 
-    //constructor that takes initial values and assigns them to the fields.
-    public Task(String Task, int Start, int End)
-    {
-        this.Task = Task;
-        this.Start = Start;
-        this.End =  End;
-    }
-
     //constructor that takes processing table row field as a parameter
     public Task(TableRow row){
         this(
@@ -24,6 +16,15 @@ public class Task {
         );
     }
 
+    //constructor that takes initial values and assigns them to the fields.
+   public Task(String Task, int Start, int End)
+    {
+        this.Task = Task;
+        this.Start = Start;
+        this.End =  End;
+    }
+
+    //getters and setters
     public String getTask() {
         return Task;
     }
